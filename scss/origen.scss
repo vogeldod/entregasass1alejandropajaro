@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/*sass inicio*/
+
+@import "inicio";
+
 /* tipografia y textos */
 @font-face {
     font-family: "Lato-Regular";
@@ -95,21 +99,27 @@ footer {
 
 
 /*clases*/
+@mixin colores($fondo, $colorletra) {
+    background-color: $fondo;
+    color: $colorletra;
+}
 
 .tituloPrincipal {
-    background-color: rgb(219, 186, 219);
-    color: slateblue;
-
+    @include colores(rgb(219, 186, 219), slateblue)
 }
 
 .titulosImagenes {
-    background-color:rgb(179,164,164);
-    color: darkorchid;
+    @include colores(rgb(179,164,164), darkorchid)
 }
 
 .imagenes {
     border-radius: 3mp;
     border: solid 5px rgb(219, 186, 219);
+}
+
+.imagenes-galeria {
+    @extend .imagenes;
+    border:rgb(247, 168, 197)
 }
 
 .menuFlex {
@@ -135,6 +145,8 @@ ul {
     }
 }
 
+
+
 footer {
     background-color: rgb(219,186,219);
     padding: 20px;
@@ -146,6 +158,7 @@ article {
 
 p {
     background-color: rgb(255, 227, 227);
+    flex-direction: row;
 }
 
 /* Responsive*/

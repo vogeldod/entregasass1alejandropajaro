@@ -1,0 +1,23 @@
+/*bucle*/
+
+@for $var from 1 through 5 {
+
+    h#{$var} {
+        font-size: calc(5rem/$var);
+    }
+}
+
+
+$redes: (
+
+    facebook:  #3a5795,
+    instagram: #833AB4
+);
+
+@each $nombres, $colores in $redes {
+    .boton-#{$nombres} {
+        background-color: $colores;
+        color: black;
+    }
+}
+

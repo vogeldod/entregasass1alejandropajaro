@@ -3,6 +3,38 @@
   padding: 0;
 }
 
+/*sass inicio*/
+/*bucle*/
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.6666666667rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.boton-facebook {
+  background-color: #3a5795;
+  color: black;
+}
+
+.boton-instagram {
+  background-color: #833AB4;
+  color: black;
+}
+
 /* tipografia y textos */
 @font-face {
   font-family: "Lato-Regular";
@@ -85,9 +117,13 @@ footer {
   color: darkorchid;
 }
 
-.imagenes {
+.imagenes, .imagenes-galeria {
   border-radius: 3mp;
   border: solid 5px #dbbadb;
+}
+
+.imagenes-galeria {
+  border: #f7a8c5;
 }
 
 .menuFlex {
@@ -123,6 +159,7 @@ article {
 
 p {
   background-color: #ffe3e3;
+  flex-direction: row;
 }
 
 /* Responsive*/
@@ -166,7 +203,7 @@ p {
     color: darkorchid;
   }
 
-  .imagenes {
+  .imagenes, .imagenes-galeria {
     border-radius: 3mp;
     border: solid 5px #dbbadb;
   }
@@ -251,7 +288,7 @@ p {
     color: darkorchid;
   }
 
-  .imagenes {
+  .imagenes, .imagenes-galeria {
     border-radius: 3mm;
     border: solid 1px #dbbadb;
   }
